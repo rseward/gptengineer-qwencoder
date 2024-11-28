@@ -1,13 +1,13 @@
 # gptengineer-qwencoder
 
-GPU Enabled llama-cpp-server container suitable for integration with gptengineer
+GPU Enabled llama-cpp-server container suitable for integration with gpt-engineer project
 
 ## Goal
 
 Boot strap a GPU enabled docker container to run llama-cpp[server] suitable to host
 the Qwen2.5-Coder model.
 
-The gptengineer project is an early attempt of an GenAI project to auto generate code for simple projects. The project provides OpenAI
+The gpt-engineer project is an early attempt of an GenAI project to auto generate code for simple projects. The project provides OpenAI
 support out of the box. It also allows integration with open models as well. However the project's documentation is critical of
 the CodeLlama model they developed against a year ago.
 
@@ -89,13 +89,16 @@ export OPENAI_API_KEY="sk-xxx"
 export MODEL_NAME="Qwen2.5-Coder"
 ```
 
-#### Checkout the gptengineer project
-
-Ensure the variables from the step above are set in your shell
+#### Checkout the gpt-engineer project
 
 - https://github.com/gpt-engineer-org/gpt-engineer/
 
+
+Ensure the variables from the step above are set in your shell
+
 ```
+git clone gpt-engineer
+
 source myenv
 cd gpt-engineer/docs
 
