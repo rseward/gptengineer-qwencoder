@@ -14,7 +14,7 @@ WORKDIR /workspace
 RUN CUDACXX=/usr/local/cuda/bin/nvcc CMAKE_ARGS="-DGGML_CUDA=on -DCMAKE_CUDA_ARCHITECTURES=all-major" FORCE_CMAKE=1 \
     pip install 'llama-cpp-python[server]' --no-cache-dir --force-reinstall --upgrade ;
 
-COPY rtd-run.sh /workspace
+COPY llama-cpp-serve.sh /workspace
 
 
-CMD [ "/workspace/rtd-run.sh" ]
+CMD [ "/workspace/llama-cpp-serve.sh" ]
