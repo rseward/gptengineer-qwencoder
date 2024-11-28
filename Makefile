@@ -18,6 +18,6 @@ models/Qwen2.5-Coder-7B-Instruct-Q6_K.gguf:
 fetch_llamacode:	models/codellama-13b.Q6_K.gguf
 	ls models/ | grep codellama
 
-models/models/codellama-13b.Q6_K.gguf:
+models/codellama-13b.Q6_K.gguf:
 	wget https://huggingface.co/TheBloke/CodeLlama-13B-GGUF/resolve/main/codellama-13b.Q6_K.gguf
 	mv *.gguf models/
